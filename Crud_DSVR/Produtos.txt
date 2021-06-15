@@ -1,0 +1,19 @@
+Instrução - Produtos
+
+index
+- Select nome, valor, observacao, data_sorteio, tipo_produto from produtos
+
+show
+- seletc nome, valor, observacao, data_sorteio, tipo_produto from produtos where id = :id
+
+post
+- insert into usuarios(nome, valor, observacao, data_sorteio, tipo_produto)
+    values(:nome, :valor, :observacao, :data_sorteio, :tipo_produto )
+
+update
+- update produtos
+    set nome = ':nome', valor = ':valor', observacao = ':observacao', data_sorteio = ':data_sorteio', tipo_produto = ':tipo_produto'
+    where id = :id 
+
+delete
+- delete from produtos where id = :id
