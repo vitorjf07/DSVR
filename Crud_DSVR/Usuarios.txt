@@ -1,0 +1,19 @@
+Instrução - Usuarios
+
+index
+- Select nome, email, telefone, cpf, senha, data_nascimento from usuarios
+
+show
+- seletc nome, email, telefone, cpf, senha, data_nascimento from usuarios where id = :id
+
+post
+- insert into usuarios(nome, email, telefone, cpf, senha, data_nascimento, tipo_usuarios)
+    values(:nome, :telefone, :cpf, :senha, :data_nascimento, :tipo_usuario )
+
+update
+- update usuarios 
+    set nome = ':nome', email = ':email', telefone = ':telefone', senha = ':senha', data_nascimento = ':data_nascimento'
+    where id = :id 
+
+delete
+- delete from usuarios where id = :id
