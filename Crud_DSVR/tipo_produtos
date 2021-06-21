@@ -1,0 +1,19 @@
+Instrução - tipo_produtos
+
+index
+- Select nome from tipo_produtos
+
+show
+- seletc nome from tipo_produtos where id = :id
+
+post
+- insert into tipo_produtos(nome)
+    values(:nome)
+
+update
+- update tipo_produtos
+    set nome = ':nome'
+    where id = :id 
+
+delete
+- delete from tipo_produtos where id = :id
