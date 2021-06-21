@@ -1,0 +1,19 @@
+Instrução - tipo_Usuarios
+
+index
+- Select nome from tipo_usuarios
+
+show
+- seletc nome from tipo_usuarios where id = :id
+
+post
+- insert into tipo_usuarios(nome)
+    values(:nome)
+
+update
+- update tipo_usuarios
+    set nome = ':nome'
+    where id = :id 
+
+delete
+- delete from tipo_usuarios where id = :id
